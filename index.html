@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header><h1 id="header">Tip Calculator</h1></header>
+    <section>
+      <div id="container">
+        <div class="entry">
+          <div id="inputPart">
+            <div class="item1 item">
+              <label>Bill Amount ₹</label>
+              <input type="number" id="BillAmount" min="0" value="0" required />
+            </div>
+            <div class="item2 item">
+              <label>Tip %</label>
+              <input
+                id="Tip"
+                type="number"
+                value="5"
+                min="0"
+                max="100"
+                required
+              />
+            </div>
+            <div class="item3 item">
+              <label>Number of People</label>
+              <input id="Split" type="number" value="1" min="1" required />
+            </div>
+            <div class="item4 item">
+              <button onclick="clear()">Clear</button>
+              <button onclick="calculate()">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div id="outputPart">
+          <div id="resHeading">Result For You</div>
+          <div id="tipamount">
+            <span>Tip You Need To Pay (₹):</span>
+            <span id="display1"></span>
+          </div>
+          <div id="total">
+            <span>Amount You Need To Pay (₹):</span>
+            <span id="display2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer">
+        <p class="para">
+          A tip or gratuity is an extra sum of money paid to certain service
+          workers for a provided service. Tip amounts, as well as acceptance,
+          vary in different parts of the world. In some countries in East Asia,
+          such as Japan, tips are seen as insulting and can sometimes be
+          interpreted as a bribe. In yet other countries, such as the United
+          States, tipping is widely expected, and in many cases, is even
+          factored into a service worker's compensation towards satisfying the
+          minimum wage requirement. This is important to note, since although
+          tipping is entirely voluntary, many servers depend on tips to make a
+          living in countries
+        </p>
+      </div>
+    </footer>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>
